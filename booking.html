@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Home Service - Ashok Hair Dresser & Salon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📅 Book Home Service</h1>
+    <p>Ashok Hair Dresser & Salon</p>
+</header>
+
+<section class="booking">
+
+    <h2>Book Your Home Service</h2>
+
+    <form id="bookingForm">
+
+        <!-- Name -->
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <!-- Phone -->
+        <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+        >
+
+        <!-- Service -->
+        <label for="service">Select Service</label>
+
+        <select id="service" required>
+
+            <option value="">Choose a service</option>
+
+            <option value="Hair Cut - Rs. 200">
+                Hair Cut - Rs. 200
+            </option>
+
+            <option value="Hair & Beard - Rs. 350">
+                Hair & Beard - Rs. 350
+            </option>
+
+            <option value="Hair Color - Rs. 350">
+                Hair Color - Rs. 350
+            </option>
+
+            <option value="Face Care - Rs. 600 - Rs. 800">
+                Face Care - Rs. 600 - Rs. 800
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+
+        <!-- Other Service / Remarks -->
+        <div id="remarksBox" style="display: none;">
+
+            <label for="remarks">Remarks / Other Service</label>
+
+            <textarea
+                id="remarks"
+                placeholder="Write the service you want"
+            ></textarea>
+
+        </div>
+
+        <!-- Address -->
+        <label for="address">Home Address</label>
+
+        <textarea
+            id="address"
+            placeholder="Enter your home address"
+            required
+        ></textarea>
+
+        <!-- Date -->
+        <label for="date">Date</label>
+
+        <input
+            type="date"
+            id="date"
+            required
+        >
+
+        <!-- Time -->
+        <label for="time">Time</label>
+
+        <input
+            type="time"
+            id="time"
+            required
+        >
+
+        <!-- Submit -->
+        <button type="submit">
+            📲 Submit Booking
+        </button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
